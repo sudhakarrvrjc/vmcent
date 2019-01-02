@@ -7,9 +7,13 @@ read b
 echo enter option
 read op
 case $op in
-add) c='expr $a +$b';;
-sub) c='expr $a -$b';;
-mul) c='expr $a \*$b';;
-*) echo wrong option
+add) 
+c=`expr $a + $b`;;
+sub) 
+c=`expr $a - $b`;;
+mul) 
+c=`expr $a \* $b`;;
+*) 
+echo wrong option
 esac
 echo total: $c
