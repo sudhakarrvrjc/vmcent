@@ -1,0 +1,13 @@
+hi this is testing if the line grater than 15 chars
+hi iam looking foe loger than 15 characters
+hello
+sudhakar
+welcome
+
+grep '.\{80\}' file
+
+perl -nle 'print if length$_>79' file
+
+awk 'length>79' file
+
+sed -n '/.\{80\}/p' file
